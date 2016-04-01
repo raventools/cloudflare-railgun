@@ -7,8 +7,8 @@ template "/etc/sysconfig/memcached" do
     variables ({
         :max_conn => node[:cloudflare_railgun][:memcached_max_conn],
 		:max_mem => node[:cloudflare_railgun][:memcached_max_mem],
-		:socket => node[:cloudflare_railgun][:memcached_socket]
-		:user => node[:cloudflare_railgun][:memcached_port]
+		:socket => node[:cloudflare_railgun][:memcached_socket],
+		:user => node[:cloudflare_railgun][:memcached_port],
 		:port => node[:cloudflare_railgun][:memcached_user]
     })
 end
