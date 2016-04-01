@@ -1,0 +1,5 @@
+default[:cloudflare_railgun][:memcached_port] = "11211"
+default[:cloudflare_railgun][:memcached_user] = "memcached"
+default[:cloudflare_railgun][:memcached_max_conn] = "4096"
+default[:cloudflare_railgun][:memcached_max_mem] = "900"
+default[:cloudflare_railgun][:memcached_socket] = ""

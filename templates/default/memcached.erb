@@ -1,0 +1,9 @@
+PORT="<%=@port%>"
+USER="<%=@user%>"
+MAXCONN="<%=@max_conn%>"
+CACHESIZE="<%=@max_mem%>"
+<% if ! @socket.empty? then %>
+OPTIONS="-s <%=@socket%> -a 0755"
+<% else %>
+OPTIONS=""
+<% end %>
