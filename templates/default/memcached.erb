@@ -3,7 +3,7 @@ USER="<%=@user%>"
 MAXCONN="<%=@max_conn%>"
 CACHESIZE="<%=@max_mem%>"
 <% if ! @socket.empty? then %>
-OPTIONS="-s <%=@socket%> -a 0755"
+OPTIONS="-s <%=@socket%> -a 0777"
 <% else %>
 OPTIONS=""
 <% end %>
