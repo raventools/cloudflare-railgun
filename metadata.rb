@@ -10,6 +10,7 @@ version          '0.1.0'
 recipe "cloudflare_railgun::default", "install and configure railgun"
 recipe "cloudflare_railgun::install", "install railgun"
 recipe "cloudflare_railgun::configure", "configure railgun"
+recipe "cloudflare_railgun::memcached", "install and configure memcached"
 
 attribute "coudflare_railgun",
 	:display_name => "Cloudflare railgun",
